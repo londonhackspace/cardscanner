@@ -36,6 +36,6 @@ class cardReader(object):
 			elif uid:
 				self.current = uid
 				logging.info("Got card with uid %s", uid)
-				subprocess.call(["/bin/bash", "/home/russ/cardscanner/input_card.sh", uid])
+				subprocess.call(["/bin/bash", "/home/kiosk/cardscanner/input_card.sh", uid])
 
 cardReader().run()
