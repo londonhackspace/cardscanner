@@ -1,6 +1,5 @@
 #!/bin/bash
-WID=`xdotool search "Chromium" | head -1`
-xdotool windowactivate --sync $WID
+xdotool search --name Kiosk windowfocus --sync
 xdotool key --clearmodifiers alt+i
 xdotool type "$1"
 xdotool key Return
